@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><head>
+    <meta charset="UTF-8">
+    <title>מערכת פניות - לוגו ותפריט</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#">בית</a>
+            <a href="#">שירותים</a>
+            <a href="#">אודות</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>פעולות</h3>
+            <button onclick="toggleForm()">פתח תיבת תלונה</button>
+        </aside><main class="main-content">
+            <h2>ברוכים הבאים למערכת</h2>
+            <p>לחצו על הכפתור בצד כדי להגיש תלונה רשמית.</p>
+
+            <section id="complaintBox" class="form-container">
+                <h3>טופס תלונה</h3>
+                <form>
+                    <label>בחר שפה:</label>
+                    <select>
+                        <option>עברית</option>
+                        <option>English</option>
+                        <option>Русский</option>
+                    </select>
+
+                    <label>תיאור התלונה:</label>
+                    <textarea rows="5" placeholder="כתוב כאן מה קרה..."></textarea>
+                    
+                    <button type="button" onclick="alert('התלונה נשלחה!')">שלח תלונה</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var box = document.getElementById("complaintBox");
+            if (box.style.display === "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

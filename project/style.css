@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Header: לוגו בצד אחד, תפריט בצד שני */
+header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+nav {
+    display: inline-block;
+    width: 79%;
+    text-align: left; /* התפריט יהיה בצד שמאל של הראש */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+/* מבנה ה-Layout */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.sidebar {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    min-height: 400px;
+    border-radius: 8px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.main-content {
+    display: inline-block;
+    width: 78%;
+    margin-right: 1%;
+    vertical-align: top;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* תיבת התלונה */
+.form-container {
+    display: none; /* מוסתר כברירת מחדל */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+label { display: block; margin-top: 10px; }
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
